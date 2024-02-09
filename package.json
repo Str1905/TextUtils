@@ -1,4 +1,5 @@
 {
+   "hostage": "https://github.com/Str1905/TextUtiles",
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +17,8 @@
     "nth-check": "2.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" ,
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
